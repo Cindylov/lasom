@@ -49,7 +49,7 @@ const Product = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {products.map((product, index) => (
             <div key={index} className=" rounded-lg p-4 text-center relative">
-              <img src={product.image} alt={product.name} className="w-287 h-377 object-cover mb-2 rounded-md" />
+              <img src={product.image} alt={product.name} className="w-287 h-377 object-cover mb-2 rounded-md hover:scale-105" />
               <div className="bg-white rounded-md absolute left-6 bottom-8 lg:w-60 ">
               <div className="flex lg:flex justify-around items-center">
               <h3 className="text-lg font-semibold">{product.name}</h3>
@@ -57,7 +57,7 @@ const Product = () => {
               </div>
               <div className="flex lg:flex justify-around items-center">
               <p className="pe-2 ps-1">{product.price}</p>
-              <button className="bg-customColor text-white px-3 mb-2 mt-2 me-1 rounded-md">Add to cart</button>
+              <button className="bg-customColor text-white px-1 mb-2 mt-2 me-1 rounded-md">Add to cart</button>
               </div>
               </div>
             </div>
